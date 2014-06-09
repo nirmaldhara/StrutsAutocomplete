@@ -5,7 +5,8 @@
  
 <struts>
  <constant name="struts.devMode" value="true" />
-	<package name="default" namespace="/" extends="struts-default">
+	<package name="default" namespace="/" extends="struts-default" >
+	<default-action-ref name="autocomplete" />
  
 		<action name="autocomplete" 
 			class="com.codewale.example.action.AutoCompleteAction" >
