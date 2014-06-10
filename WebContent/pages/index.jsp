@@ -28,7 +28,7 @@ body {
       source: function( request, response ) {
         //  alert("hi"+request.term);
         $.ajax({
-          url: "http://localhost:7001/StrutsAutocomplete/getcountry",
+          url: "./getcountry",
           dataType: "json",
           data: {
                name_startsWith: request.term
